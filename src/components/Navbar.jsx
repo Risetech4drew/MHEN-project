@@ -26,7 +26,7 @@ function AboutDropdownMenuList() {
   const renderItems = aboutMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
       <MenuItem>
-        <Typography variant="5" color="blue-gray" className="font-bold">
+        <Typography variant="small" color="blue-gray" className="font-bold">
           {title}
         </Typography>
       </MenuItem>
@@ -81,7 +81,7 @@ function ProjectDropdownMenuList() {
   const renderItems = projectsMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
       <MenuItem>
-        <Typography variant="5" color="blue-gray" className="font-bold">
+        <Typography variant="small" color="blue-gray" className="font-bold">
           {title}
         </Typography>
       </MenuItem>
@@ -98,7 +98,7 @@ function ProjectDropdownMenuList() {
         placement="bottom"
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-bold">
+          <Typography as="div" variant="" className="">
             <ListItem
               className="flex items-center gap-2 font-bold md:text-xl text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -136,7 +136,7 @@ function PublicationsDropdownMenuList() {
   const renderItems = publicationsMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
       <MenuItem>
-        <Typography variant="5" color="blue-gray" className="font-bold">
+        <Typography variant="small" color="blue-gray" className="font-bold">
           {title}
         </Typography>
       </MenuItem>
@@ -216,9 +216,9 @@ function NavigationBar() {
   }, []);
 
   return (
-    <Navbar className="max-w-full px-4 py-2">
+    <Navbar className="sticky top-0 z-10 max-w-full px-4 py-2 mb-0 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <NavLink className=" text-red-300 text-xl font-bold tracking-wider md:text-xl lg:mb-6 lg:mt-0 lg:p-1">
+        <NavLink className=" text-red-300 text-xl font-bold tracking-wider md:text-2xl lg:mb-6 lg:mt-0 lg:p-1">
           MHEN
         </NavLink>
         <div className="hidden lg:block">
