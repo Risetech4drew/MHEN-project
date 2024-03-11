@@ -38,9 +38,13 @@ function Hero() {
             alt={item.alt}
             className="h-full w-full object-center object-cover"
           />
-          <div className="absolute inset-0 h-full w-full bg-black/75">
-            {item.title && <h1>{item.title}</h1>}
-            <p>{item.description}</p>
+          <div className="absolute inset-0 h-full w-full bg-black/75 flex flex-col justify-center px-4">
+            {item.title && (
+              <h1 className="text-white text-2xl font-bold tracking-wide">
+                {item.title}
+              </h1>
+            )}
+            <p className="text-white">{item.description}</p>
           </div>
         </div>
       ))}
