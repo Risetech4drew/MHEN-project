@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navigation from "../../components/Navigation";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 function Home() {
   const location = useLocation();
@@ -13,6 +14,7 @@ function Home() {
     <>
       <Navigation />
       <Hero />
+      <About />
     </>
   );
 }

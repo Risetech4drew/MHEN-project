@@ -6,7 +6,7 @@ import image3 from "../../../assets/images/secondPic.jpg";
 const carouselDetails = [
   {
     image: image1,
-    title: "Malawi Health Equuity Network",
+    title: "Malawi Health Equity Network",
     description:
       "promoting equitable access to quality, affordable and responsive health care services in Malawi",
     alt: "hhshshj",
@@ -32,15 +32,15 @@ function Hero() {
       className="mt-0"
     >
       {carouselDetails.map((item, index) => (
-        <div key={index} className="relative h-[25rem] w-full">
+        <div key={index} className="relative h-[25rem] md:h-[45rem] w-full">
           <img
             src={item.image}
             alt={item.alt}
             className="h-full w-full object-center object-cover"
           />
-          <div className="absolute inset-0 h-full w-full bg-black/75 flex flex-col justify-center px-4">
+          <div className="absolute inset-0 h-full w-full bg-black/75 flex flex-col justify-center md:items-center px-4">
             {item.title && (
-              <h1 className="text-white text-2xl font-bold tracking-wide">
+              <h1 className="text-white text-2xl md:text-5xl font-bold tracking-wide">
                 {item.title}
               </h1>
             )}
