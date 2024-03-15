@@ -32,7 +32,7 @@ const cardDetails = [
 function About() {
   return (
     <div className="mt-4 px-4">
-      <h1 className="text-5xl text-black-700 text-center font-bold">About</h1>
+      <h1 className="text-3xl text-blue-700 text-center font-bold">About</h1>
       <div className="flex flex-wrap gap-8">
         {cardDetails.map((item, index) => (
           <Card key={index} className="mt-6 w-96">
