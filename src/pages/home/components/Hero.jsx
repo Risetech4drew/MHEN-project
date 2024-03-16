@@ -40,11 +40,11 @@ function Hero() {
           />
           <div className="absolute inset-0 h-full w-full bg-black/75 flex flex-col justify-center md:items-center px-4">
             {item.title && (
-              <h1 className="text-white text-2xl md:text-5xl font-bold tracking-wide">
+              <h1 className="text-white text-2xl md:text-5xl mb-4 font-bold tracking-wide">
                 {item.title}
               </h1>
             )}
-            <p className="text-white">{item.description}</p>
+            <p className="text-white md:text-2xl">{item.description}</p>
           </div>
         </div>
       ))}

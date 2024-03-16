@@ -32,22 +32,31 @@ const cardDetails = [
 function About() {
   return (
     <div className="mt-4 px-4">
-      <h1 className="text-3xl text-blue-700 text-center font-bold">About</h1>
-      <div className="flex flex-wrap gap-8">
+      <h1 className="text-3xl md:text-5xl text-blue-700 text-center font-bold">
+        About
+      </h1>
+      <div className="flex flex-wrap gap-8 justify-center">
         {cardDetails.map((item, index) => (
-          <Card key={index} className="mt-6 w-96">
+          <Card
+            key={index}
+            className="md:flex md:justify-center mt-6 w-96 md:w-[50rem] md:h-[20rem]"
+          >
             <CardBody>
-              <Typography variant="h5" color="black" className="font-bold mb-4">
+              <Typography
+                variant="h5"
+                color="black"
+                className="font-bold mb-4 md:text-2xl"
+              >
                 {item.title}
               </Typography>
-              <Typography>{item.description}</Typography>
+              <Typography className="md:text-lg">{item.description}</Typography>
             </CardBody>
             <CardFooter>
               <Link to="#">
                 <Button
                   size="sm"
                   variant="text"
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 md:text-lg"
                 >
                   Read more
                   <svg
