@@ -64,12 +64,7 @@ function Projects() {
             key={index}
             className="mt-6 w-86 md:w-96 border-b-4 border-blue-700"
           >
-            <CardHeader
-              floated={false}
-              shadow={false}
-              color="transparent"
-              className="m-0"
-            >
+            <CardHeader floated={false} color="transparent" className="m-0">
               <img src={item.image} alt="" />
             </CardHeader>
             <CardBody>
