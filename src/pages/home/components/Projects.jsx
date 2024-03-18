@@ -36,6 +36,10 @@ function Projects() {
       <h1 className="text-2xl md:text-3xl text-center text-blue-700 font-bold">
         Our Impact Through projects
       </h1>
+      <p className="text-blue-700 font-bold md:text-2xl text-center px-4 mt-4">
+        fostering positive change and advancing healthcare accessibility across
+        our communities.
+      </p>
       <div className="mt-4 flex justify-between px-5">
         <h3 className="text-center text-blue-700 font-bold text-lg md:text-2xl">
           Current Projects
@@ -62,10 +66,10 @@ function Projects() {
         {currentProjects.map((item, index) => (
           <Card
             key={index}
-            className="mt-6 w-86 md:w-96 border-b-4 border-blue-700"
+            className="mt-6 w-86 md:w-96 border-b-4 border-green-700"
           >
             <CardHeader floated={false} color="transparent" className="m-0">
-              <img src={item.image} alt="" />
+              <img src={item.image} className="" alt="" />
             </CardHeader>
             <CardBody>
               <h2 className="mb-2 font-bold text-lg">{item.projectName}</h2>
