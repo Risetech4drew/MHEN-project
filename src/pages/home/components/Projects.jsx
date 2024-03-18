@@ -58,10 +58,18 @@ function Projects() {
           </svg>
         </NavLink>
       </div>
-      <div className="mt-[5rem] flex flex-col md:flex-row justify-center gap-20">
+      <div className="mt-[5rem] px-4 flex flex-col md:flex-row justify-center gap-20">
         {currentProjects.map((item, index) => (
-          <Card className="mt-6 w-80 md:w-96">
-            <CardHeader className="relative h-56">
+          <Card
+            key={index}
+            className="mt-6 w-86 md:w-96 border-b-4 border-blue-700"
+          >
+            <CardHeader
+              floated={false}
+              shadow={false}
+              color="transparent"
+              className="m-0"
+            >
               <img src={item.image} alt="" />
             </CardHeader>
             <CardBody>

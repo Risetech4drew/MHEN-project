@@ -31,7 +31,7 @@ const cardDetails = [
 
 function About() {
   return (
-    <div className="mt-4 mb-4 px-4">
+    <div className="mt-4 px-4">
       <h1 className="text-3xl md:text-5xl text-blue-700 text-center font-bold">
         About
       </h1>
@@ -39,7 +39,7 @@ function About() {
         {cardDetails.map((item, index) => (
           <Card
             key={index}
-            className="relative md:flex md:justify-center mt-6 w-96 md:w-[50rem] md:h-[20rem]"
+            className="relative md:flex md:justify-center mt-6 w-96 md:w-[50rem] md:h-[20rem] border-b-4 border-blue-700"
           >
             <CardBody>
               <Typography
