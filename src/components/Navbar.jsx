@@ -98,7 +98,7 @@ function ProjectDropdownMenuList() {
         placement="bottom"
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="">
+          <Typography as="div" variant="" className="">
             <ListItem
               className="flex items-center gap-2 font-bold md:text-xl text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
