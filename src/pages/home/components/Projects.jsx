@@ -36,7 +36,7 @@ function Projects() {
       <h1 className="text-3xl md:text-5xl text-center text-blue-700 font-bold">
         Projects
       </h1>
-      <div className="mt-4 flex justify-between px-10">
+      <div className="mt-4 flex justify-between px-5">
         <h3 className="text-center text-blue-700 font-bold text-lg md:text-2xl">
           Current Projects
         </h3>
@@ -58,7 +58,7 @@ function Projects() {
           </svg>
         </NavLink>
       </div>
-      <div className="mt-[5rem] px-4 flex flex-col md:flex-row justify-center gap-20">
+      <div className="mt-[2rem] px-4 flex flex-col md:flex-row justify-center gap-20">
         {currentProjects.map((item, index) => (
           <Card
             key={index}
@@ -73,7 +73,7 @@ function Projects() {
               <img src={item.image} alt="" />
             </CardHeader>
             <CardBody>
-              <h3 className="mb-2">{item.projectName}</h3>
+              <h2 className="mb-2 font-bold text-lg">{item.projectName}</h2>
               <p>{item.projectdetails}</p>
             </CardBody>
             <CardFooter>
