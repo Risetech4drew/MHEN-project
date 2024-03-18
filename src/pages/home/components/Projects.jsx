@@ -60,7 +60,7 @@ function Projects() {
       </div>
       <div className="mt-[5rem] flex flex-col md:flex-row justify-center gap-20">
         {currentProjects.map((item, index) => (
-          <Card className="mt-6 w-96">
+          <Card className="mt-6 w-80 md:w-96">
             <CardHeader className="relative h-56">
               <img src={item.image} alt="" />
             </CardHeader>
