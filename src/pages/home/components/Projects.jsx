@@ -33,8 +33,8 @@ const currentProjects = [
 function Projects() {
   return (
     <div className="mt-8">
-      <h1 className="text-3xl md:text-5xl text-center text-blue-700 font-bold">
-        Projects
+      <h1 className="text-2xl md:text-3xl text-center text-blue-700 font-bold">
+        Our Impact Through projects
       </h1>
       <div className="mt-4 flex justify-between px-5">
         <h3 className="text-center text-blue-700 font-bold text-lg md:text-2xl">
