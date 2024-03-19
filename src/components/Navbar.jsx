@@ -26,7 +26,11 @@ function AboutDropdownMenuList() {
   const renderItems = aboutMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
       <MenuItem>
-        <Typography variant="small" color="blue-gray" className="font-bold">
+        <Typography
+          variant="small"
+          color="blue-gray"
+          className="font-bold hover:text-blue-700"
+        >
           {title}
         </Typography>
       </MenuItem>
@@ -46,7 +50,7 @@ function AboutDropdownMenuList() {
           <Typography as="div" variant="small" className="font-bold">
             <ListItem
               className="flex items-center gap-2 font-bold md:text-xl text-gray-900"
-              selected={isMenuOpen || isMobileMenuOpen}
+              // selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               About
@@ -81,7 +85,11 @@ function ProjectDropdownMenuList() {
   const renderItems = projectsMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
       <MenuItem>
-        <Typography variant="small" color="blue-gray" className="font-bold">
+        <Typography
+          variant="small"
+          color="blue-gray"
+          className="font-bold hover:text-blue-700"
+        >
           {title}
         </Typography>
       </MenuItem>
@@ -101,7 +109,7 @@ function ProjectDropdownMenuList() {
           <Typography as="div" variant="" className="">
             <ListItem
               className="flex items-center gap-2 font-bold md:text-xl text-gray-900"
-              selected={isMenuOpen || isMobileMenuOpen}
+              // selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Projects
@@ -136,7 +144,11 @@ function PublicationsDropdownMenuList() {
   const renderItems = publicationsMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
       <MenuItem>
-        <Typography variant="small" color="blue-gray" className="font-bold">
+        <Typography
+          variant="small"
+          color="blue-gray"
+          className="font-bold md:hover:text-blue-700"
+        >
           {title}
         </Typography>
       </MenuItem>
@@ -156,7 +168,7 @@ function PublicationsDropdownMenuList() {
           <Typography as="div" variant="small" className="font-bold">
             <ListItem
               className="flex items-center gap-2 font-bold md:text-xl text-gray-900"
-              selected={isMenuOpen || isMobileMenuOpen}
+              // selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Publications
