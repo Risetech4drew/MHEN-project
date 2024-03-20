@@ -228,7 +228,7 @@ function NavigationBar() {
   }, []);
 
   return (
-    <Navbar className="sticky top-0 z-10 max-w-full px-4 py-2 mb-0 rounded-none">
+    <Navbar className="sticky top-0 z-20 max-w-full px-4 py-2 mb-0 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">
         <NavLink className=" text-blue-700 text-xl font-bold tracking-wider md:text-2xl lg:mb-6 lg:mt-0 lg:p-1">
           MHEN

@@ -33,9 +33,9 @@ const currentProjects = [
 
 function CurrentProjects() {
   return (
-    <div>
-      <div className="mt-4 flex justify-between px-5">
-        <h3 className="text-center text-blue-700 font-bold text-lg md:text-2xl">
+    <div className="mt-[3rem]">
+      <div className="mt-4 md:w-[84rem] md:m-auto  flex justify-between px-5">
+        <h3 className="text-center text-blue-700  font-bold text-lg md:text-2xl">
           Current Projects
         </h3>
         <NavLink className="flex items-center gap-2 text-blue-700 font-bold">

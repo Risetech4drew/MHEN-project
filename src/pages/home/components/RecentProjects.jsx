@@ -31,8 +31,8 @@ const recentProjects = [
 ];
 function RecentProjects() {
   return (
-    <div>
-      <div className="mt-4 flex justify-between px-5">
+    <div className="mt-[4rem]">
+      <div className="mt-4 md:w-[84rem] md:m-auto flex justify-between px-5">
         <h3 className="text-center text-blue-700 font-bold text-lg md:text-2xl">
           Recent Projects
         </h3>
