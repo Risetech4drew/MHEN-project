@@ -25,7 +25,7 @@ function AboutDropdownMenuList() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const renderItems = aboutMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
-      <MenuItem>
+      <MenuItem className="hover:bg-white">
         <Typography
           variant="small"
           color="blue-gray"
@@ -70,7 +70,7 @@ function AboutDropdownMenuList() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="outline-none outline-0">{renderItems}</ul>
+          <ul>{renderItems}</ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -84,7 +84,7 @@ function ProjectDropdownMenuList() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const renderItems = projectsMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
-      <MenuItem>
+      <MenuItem className="hover:bg-white">
         <Typography
           variant="small"
           color="blue-gray"
@@ -129,7 +129,7 @@ function ProjectDropdownMenuList() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="outline-none outline-0">{renderItems}</ul>
+          <ul>{renderItems}</ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -143,7 +143,7 @@ function PublicationsDropdownMenuList() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const renderItems = publicationsMenuItems.map(({ title }, key) => (
     <NavLink to="#" key={key}>
-      <MenuItem>
+      <MenuItem className="hover:bg-white">
         <Typography
           variant="small"
           color="blue-gray"
@@ -188,7 +188,7 @@ function PublicationsDropdownMenuList() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="outline-none outline-0">{renderItems}</ul>
+          <ul>{renderItems}</ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
