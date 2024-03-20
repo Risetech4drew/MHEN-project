@@ -58,9 +58,13 @@ function RecentProjects() {
         {recentProjects.map((item, index) => (
           <Card
             key={index}
-            className="mt-6 w-85 md:w-96 border-b-4 border-blue-700"
+            className="mt-6 w-85 rounded-none md:w-96 border-b-4 border-blue-700"
           >
-            <CardHeader floated={false} color="transparent" className="m-0">
+            <CardHeader
+              floated={false}
+              color="transparent"
+              className="m-0 rounded-none"
+            >
               <img src={item.image} className="" alt="" />
             </CardHeader>
             <CardBody>
